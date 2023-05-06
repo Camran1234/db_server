@@ -1,8 +1,7 @@
 const mysql = require('mysql2')
 
 const configure = {
-    //host: 'db-network.c7a1pogzvzij.us-east-1.rds.amazonaws.com',
-    host: 'localhost',
+    host: 'db-network.c7a1pogzvzij.us-east-1.rds.amazonaws.com',
     user: 'admin',
     multipleStatements: true,
     password: 'DemonHunter1234.-',
