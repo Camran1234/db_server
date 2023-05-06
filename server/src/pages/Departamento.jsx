@@ -19,7 +19,7 @@ const Departamento = () => {
     ])
 
     useEffect(() => {
-      handlerSql.getDepartamento()
+      handlerSql.getDept()
             .then(result => {
                 setData(result);
             })
