@@ -15,7 +15,8 @@ app.use(cors({
 }));
 
 const server = app.listen(app.get('port'), () => {
-    console.log('Server On Port ', app.get('port'))
+    const { address, port } = server.address()
+  console.log(`Servidor escuchando en http://${address}:${port}`)
 });
 
 function stopServer() {
