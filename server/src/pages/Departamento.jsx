@@ -21,7 +21,10 @@ const Departamento = () => {
     useEffect(() => {
       handlerSql.getDept()
             .then(result => {
-                setData(result);
+                if(result != undefined && result != null){
+                    setData(result);
+                    console.log("Arreglo "+JSON.stringify(result))
+                }
             })
             .catch(error => {
                 console.error(JSON.stringify(error))
@@ -29,7 +32,10 @@ const Departamento = () => {
 
         handlerSql.getNoticias()
             .then(result => {
-                setNoticia(result);
+                if(result != undefined && result != null){
+                    setNoticia(result);
+                    console.log("Arreglo "+JSON.stringify(result))
+                }
             })
             .catch(error => {
                 console.error(JSON.stringify(error))
