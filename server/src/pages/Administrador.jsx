@@ -18,9 +18,9 @@ const Administrador = () => {
     useEffect(() => {
         handlerSql.getAdmins()
             .then(result => {
+                console.log("Arreglo "+JSON.stringify(result))
                 if(result != undefined && result != null){
                     setData(result);
-                    console.log("Arreglo "+JSON.stringify(result))
                 }
             })
             .catch(error => {

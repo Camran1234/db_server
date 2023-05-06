@@ -17,6 +17,7 @@ const Desarrollador = () => {
     useEffect(() => {
         handlerSql.getDesarrolladores()
             .then(result => {
+                console.log("Arreglo "+JSON.stringify(result))
                 if(result != undefined && result != null){
                     setData(result);
                     console.log("Arreglo "+JSON.stringify(result))
