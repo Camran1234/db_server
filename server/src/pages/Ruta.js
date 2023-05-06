@@ -1,5 +1,5 @@
 let ruta = {
-    ip: "http://localhost",
+    ip: "http://172.31.17.244",
     puerto: "4000"
 }
 
